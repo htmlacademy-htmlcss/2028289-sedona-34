@@ -30,6 +30,17 @@ body{
 	color: #000000;
 	background-color: #ffffff;
 }
+.navigation-link-left{
+	color:#000000;
+	font-size:20px;
+  line-height:26px;
+	font-weight: 700 ;
+	background-color:#ffffff ;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 20px 34px; 
+}
 .navigation-link{
 	color:#000000;
 	font-size:20px;
@@ -37,29 +48,37 @@ body{
 	font-weight: 700 ;
 	background-color:#ffffff ;
 	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 20px 34px;
 }
 .navigation{
 	display: flex;
 	margin: 0 auto;
 	width: 1200px;
+	
 }
 .navigation-list{
-	margin: 0;
-	padding: 0;
+	margin: 0 ;
+	padding: 0 ;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
 }
 .navigation-list-left{
 	width: 490px;
+	
 }
 .navigation-list-right{
-	max-width: 300px;
+	max-width: 340px;
 	margin-left: auto;
 
 }
-.navigation-logo-header{
-	width: 139px;
-	display: block;
-	margin-right:auto;
+.navigation-list-right .navigation-link{
+	min-width: 16px;
+	min-height: 22px;
 }
+
 .button-header{
 	width: 160px;
 	height: 37px;
@@ -72,6 +91,8 @@ body{
 }
 .main-greeting{
 	background: url("../images/index-background-welcom-sedona.jpg") no-repeat 0 0/1200px 485px ;
+	padding-top: 51px;
+	padding-bottom:83px; 
 }
 .link-search-desctiption{
 	font-weight: 400;
@@ -211,6 +232,16 @@ margin-bottom: 46px;
 }
 .footer-contact-address-phone{
 	color: #000000;
+	width: 331px;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 5px;
+	margin-left: 195px;
+	margin-right: 194px;
+	margin-bottom: 5px;
+	text-decoration: none;
 }
 .search-button-hotel{
 	width: 574px ;
@@ -230,7 +261,7 @@ margin-bottom: 46px;
 .filter{
 	background: url("../images/catalog-filter.jpg") no-repeat 0 0/1200px 403px;
 	width: 1200px;
-	height: 403px;
+	padding-top: 20px;
 }
 .advantages-item-one{
 	background-color: #82B3D3;
@@ -273,7 +304,7 @@ html{
 	margin: 0 auto;
 }
 .description-description{
-	width: 620px;
+	width: 660px;
 	height: 72px;
 	text-align: center;
 	font-weight: 700;
@@ -616,14 +647,12 @@ input[type=email]{
 	display: flex;
 	width: 1200px;
 	margin:0 auto;
-	justify-content:space-around;
-}
-.inner-page-container{
-	width: 1200px;
-	margin: 0 auto;
+	 justify-content:space-around;  
 }
 .inner-index-container{
 	flex-grow: 1;
+	width: 1200px;
+	margin: 0 auto;
 }
 .inner-index-title{
 	font-weight: 700;
@@ -632,8 +661,7 @@ input[type=email]{
 	text-transform: uppercase;
 	color: #ffffff;
 	text-align: left;
-	width: 459px;
-	height: 78px;
+	width: 494px;
 	margin-top: 35px;
 	margin-left: 70px;
 	margin-right: 635px;
@@ -641,11 +669,116 @@ input[type=email]{
 }
 .catalog{
 	width: 1200px;
-	height: 1212px;
+	padding: 0 auto;
+	margin: 0 auto;
 	background-color: #ffffff;
-	display: flex;
+	
 }
 .product-card{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style-type:none;
+}
+.filter-catalog{
+display: flex;	
+}
+.catalog-option{
+display: flex;
+justify-content: space-around;	
+}
+.pagination{
+	display: flex;
+	list-style-type:none;
+}
+.pagination-item{
+	width: 60px;
+}
+.pagination-and-select-container{
+	display: flex;
+	justify-content: space-between;
+}
+.catalog-option-title{
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+	width: 338px;
+	margin-top: 57px;
+	margin-left: 72px;
+	margin-right: 211px;
+	margin-bottom: 80px;
+}
+.filter-container{
+	width: 1060px;
+}
+.visually-hidden{
+	position:absolute;
+  width:1px;
+  height:1px;
+  margin:-1px;
+  padding:0;
+  border:0;
+  clip:rect( 0 0 0 0 );
+  overflow:hidden;
+
+}
+.subscribe-next{
+	background-color: #ffffff;
+	text-align: center;
+}
+.subscribe-description-black{
+	width: 404px;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+	margin-top: 94px;
+	margin-left: 398px;
+	margin-right: 398px;
+	margin-bottom: 29px;
+}
+.subscribe-description-black-next{
+	width: 476px;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
+	margin-left: 363px;
+	margin-right: 361px;
+	margin-bottom: 46px;
+}
+.footer-container-page{
+	width: 1200px;
+	margin: 0 auto;
+}
+.footer-links{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.footer-item{
+width: 47px;
+margin-top: 5px;
+margin-bottom: 5px;
+align-items: center;
+padding-top: 13px;
+padding-left: 12px;
+padding-right: 12px;
+padding-bottom: 13px;
+}
+.footer-contact-address{
+	width: 720px;
+	text-align: center;
+}
+.header-logo{
+	margin-left: 70px;
+	margin-right: 47px;
+	margin-bottom: 5px;
+	display: block;
+	width: 139px;
+}
+.diviver-index-page{
+	margin-top: 26px;
+	display: block;
 }
