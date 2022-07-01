@@ -7,52 +7,48 @@
     <base href="https://htmlacademy-htmlcss.github.io/2028289-sedona-34/3/">
 </head>
   <body>
-<header class="header-page">
-<nav class="navigation">
- <div class="navigation-logo-header">
-	<a class="link-index-page-now" href="index.html">
-	 <img class="header-logo" src="images/logo-sedona.svg" width="139" height="70" alt="Логотип сайта города Седона">
-  </a>
- </div>
-	<ul class="navigation-list navigation-list-left">
-		 <li class="navigation-item-glav-nav">
-     <a class="navigation-link" href="index.html">
-     Главная
-     </a>
-	  </li>
-		<li class="navigation-item-sed-nav">
-			<a class="navigation-link" href="#description">
-			О Седоне
-			</a>
-		</li>
-		<li class="navigation-item-hotel-nav">
-			<a class="navigation-link" href="#hotel">
-			Гостиницы
-			</a>
-		</li>
-	</ul>
-	  
-	  <ul class="navigation-list navigation-list-right">
-			<li class="navigation-item-search-images">
-				<a class="navigation-link" href="#">
-				<img src="images/search.svg" width="18" height="18" alt="Поиск">
-				<span class="visually-hidden">Поиск</span>
-			</a>
-		 </li>
-			
-			<li class="navigation-item-hearts-images">
-			 <a class="navigation-link" href="#">
-				<img src="images/hearts.svg" width="18" height="17" alt="Избранное">
-				<span class="visually-hidden">Избранное</span>
+		<header class="header-page">
+			<nav class="navigation">
+			 <div class="navigation-logo-header">
+				<a class="link-index-page-now" href="index.html">
+				 <img class="header-logo" src="images/logo-sedona.svg" width="139" height="70" alt="Логотип сайта города Седона">
+				</a>
+			 </div>
+		  <section class="navigation-list navigation-list-left">
+			<div class="navigation-item-glav-nav">
+			 <a class="navigation-link" href="#glav">
+			 Главная
 			 </a>
-			</li>
-			 
-			<li class="navigation-item">
-			 <a class="navigation-link-alternative" href="#">
-				хочу сюда
+			 <a class="navigation-link" href="#description">
+				О Седоне
 			 </a>
-		</li>
-	 </ul>
+			 <a class="navigation-link" href="catalog.html">
+				Гостиницы
+			 </a>
+			</div>
+		 </section>
+		 <section class="navigation-list navigation-list-right">
+			<div class="navigation-item-search-images">
+			 <a class="navigation-link-ss" href="#">
+			 <svg class="navigation-icon"  width="18" height="18" fill="none" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+				<path d="m18.2 17-3.8-3.7a8 8 0 0 0 1.8-4.9 8 8 0 0 0-8-8 8 8 0 1 0 5 14.4l3.6 3.8 1.4-1.6Zm-10-2.4a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" fill="#000"/>
+			 </svg>
+			 <span class="visually-hidden">Поиск</span>
+			</a>
+		 </div>
+		 <div class="navigation-item-hearts-images">
+			<a class="navigation-link-ss" href="#">
+		  <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" fill="none" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
+		 <path d="M9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.6 0C7 0 8.1.5 9.1 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3ZM3 7.5l6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c0 .9.3 1.6.7 2.1Z" fill="#000"/>
+		 </svg>
+		 <span class="visually-hidden">Избранное</span>
+		 </a>
+	 </div>
+	   <a class="navigation-link-alternative" href="#">
+	  	хочу сюда!
+		 </a>
+	  </div>
+	 </section>
 	</nav>
 </header>
 <main class=" inner-index-container">
@@ -61,9 +57,11 @@
 				<h1 class="inner-index-title">Гостиницы Седоны</h1>
 				<h2 class="section-filter-catalog visually-hidden">Фильтр для каталога</h2>
 				<ul class="breadcrubs">
-					<li>
+					<li class="link-hone-for-filtre">
 						<a class="link-home" href="index.html">
-							<img src="images/home-for-filter.svg" width="12" height="12" alt="Главная страница">
+							<svg width="12" height="12" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="m.2 6.1 6-5.5 6 5.5v6.2H.2V6.1Zm1 .4v4.8h10V6.5L6.2 2l-5 4.5Zm4 3.8h-1V6.8h4v3.5h-1V7.8h-2v2.5Z" fill="#fff"/>
+								</svg>
 						</a>
 					</li>
 					<li>
@@ -145,15 +143,21 @@
 						<option value="cheap"><span class="select-control-text">Сначала дешёвые</span></option>
 					</select>
 					<div class="three-button-catalog">
-					<a class="button-black" href="#">
-						<img class="button-black-option" alt="Показать карточки" src="images/icon-table.svg" width="16" height="14">
-					</a>
-					<a class="button-lightgray" href="#">
-						<img class="button-lightgray-option" alt="Изменить вид" src="images/icon-slideshow.svg" width="16" height="14">
-					</a>
-					<a class="button-lightgray" href="#">
-						<img class="button-lightgray-option" alt="Изменить вид по другому" src="images/icon-list.svg" width="16" height="14">
-					</a>
+					<button class=" button-black-option">
+						<svg  width="16" height="14" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
+							</svg>
+					</button>
+					<button class="button-lightgray-option">
+						<svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
+							</svg>
+					</button>
+					<button class="button-lightgray-option">
+						<svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/>
+							</svg>
+					</button>
 				</div>
 				</div>
 				<ul class="product-card">
@@ -175,7 +179,12 @@
 							</button>
 						</div>
 						<div class="start-and-rating-block">
-						  <span class="product-card-item-stars">Звезды</span>
+						  <ul class="product-card-item-stars">
+								<li class="stars"></li>
+								<li class="stars"></li>
+								<li class="stars"></li>
+								<li class="stars"></li>
+							</ul>
 							<p class="rating">РЕЙТИНГ:8,5</p>
             </div>
 					 </li>
@@ -197,7 +206,12 @@
 									</button>
 								</div>
 								<div class="start-and-rating-block">
-									<span class="product-card-item-stars">Звезды</span>
+									<ul class="product-card-item-stars">
+										<li class="stars"></li>
+										<li class="stars"></li>
+										<li class="stars"></li>
+										<li class="stars"></li>
+									</ul>
 									<p class="rating">РЕЙТИНГ:9,2</p>
 								</div>
 							
@@ -220,7 +234,11 @@
 									</button>
 								</div>
 								<div class="start-and-rating-block">
-									<span class="product-card-item-stars">Звезды</span>
+									<ul class="product-card-item-stars">
+										<li class="stars"></li>
+										<li class="stars"></li>
+										<li class="stars"></li>
+									</ul>
 									<p class="rating">РЕЙТИНГ:6,9</p>
 								</div>
 							 </li>
@@ -242,7 +260,10 @@
 										</button>
 									</div>
 									<div class="start-and-rating-block">
-										<span class="product-card-item-stars">Звезды</span>
+										<ul class="product-card-item-stars">
+											<li class="stars"></li>
+											<li class="stars"></li>
+										</ul>
 										<p class="rating">РЕЙТИНГ:5,0</p>
 									</div>
 								 </li>
@@ -286,8 +307,8 @@
 								</p>
 								<form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
 							<input class="form-text" type="email" placeholder="Ваш e-mail" name="appointment-email">
-									<button class="button" type="submit" >
-										ПОДПИСАТЬСЯ
+									<button class="button-for-subscribe" type="submit" >
+										<span class="button-text">ПОДПИСАТЬСЯ</span>
 									</button>
 									
 								</form>
@@ -302,17 +323,19 @@
 								<li class="footer-item-vk">
 					
 									<a class="footer-link"  href="https://vk.com/htmlacademy">
-										<img class="footer-link-logo" width="24" height="14" src="images/vk-logo.svg" alt="Ссылка на ВКонтакте">
+										<svg class="svg-vk"  width="24" height="15" aria-hidden="true" focusable="false" fill="currentColor" viewBox="0 0 24 15" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4 1.4c.2-.5 0-.9-.7-.9H20c-.6 0-1 .3-1.1.7 0 0-1.3 3.2-3.2 5.3-.7.6-1 .8-1.3.8-.1 0-.4-.2-.4-.7V1.4c0-.6-.2-.9-.7-.9H9.2c-.5 0-.7.3-.7.6 0 .6 1 .8 1 2.5v3.8c0 .8-.1 1-.5 1-.9 0-3-3.2-4.3-6.9-.3-.7-.5-1-1.2-1H1c-.8 0-.9.3-.9.7 0 .7.9 4.1 4.1 8.6 2.2 3 5.3 4.7 8 4.7 1.7 0 2-.4 2-1v-2.3c0-.8 0-.9.6-.9.4 0 1 .2 2.6 1.7 1.8 1.7 2.1 2.5 3.1 2.5H23c.8 0 1.2-.4 1-1.1-.3-.7-1.1-1.8-2.3-3L20 8.5c-.4-.5-.3-.7 0-1.1 0 0 3.2-4.4 3.5-6Z"/>
+										</svg>
 									</a>
 								</li>
 								<li class="footer-item-tg">
 									<a class="footer-link" href="https://t.me/htmlacademy">
-										<img class="footer-link-logo" width="18" height="15" src="images/telegram-logo.svg" alt="Ссылка на Телеграмм">
+										<svg class="svg-tg" width="18" height="16" aria-hidden="true" focusable="false" fill="currentColor" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M16.8.6.8 6.7c-1 .5-1 1-.2 1.4l4.1 1.2 9.5-6c.5-.2.9 0 .5.2l-7.6 7-.3 4.2c.4 0 .6-.2.8-.4l2-2 4.1 3c.8.5 1.3.3 1.5-.6L18 1.9C18.2.8 17.5.3 16.8.6Z"/></svg>
 									</a>
 								</li>
 								<li class="footer-item-yout">
 									<a class="footer-link" href="https://www.youtube.com/user/htmlacademyru">
-									<img class="footer-link-logo" width="22" height="17" src="images/youtube-logo.svg"	alt="Ссылка на ютуб канал ">
+										<svg class="svg-yout" width="22" height="17" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 22 17"  xmlns="http://www.w3.org/2000/svg"><path d="M18.6 0H3.2C1.3 0 0 1.6 0 3.4v10c0 2 1.3 3.6 3.2 3.6h15.6c1.7 0 3.2-1.6 3.2-3.4V3.4C21.8 1.6 20.5 0 18.6 0Zm-11 12.5v-8l7.4 4-7.3 4Z"/></svg>	
 									</a>
 								</li>
 							</ul>
