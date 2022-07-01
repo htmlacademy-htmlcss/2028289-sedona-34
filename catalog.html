@@ -56,9 +56,11 @@
 				<h1 class="inner-index-title">Гостиницы Седоны</h1>
 				<h2 class="section-filter-catalog visually-hidden">Фильтр для каталога</h2>
 				<ul class="breadcrubs">
-					<li>
+					<li class="link-hone-for-filtre">
 						<a class="link-home" href="index.html">
-							<img src="images/home-for-filter.svg" width="12" height="12" alt="Главная страница">
+							<svg width="12" height="12" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="m.2 6.1 6-5.5 6 5.5v6.2H.2V6.1Zm1 .4v4.8h10V6.5L6.2 2l-5 4.5Zm4 3.8h-1V6.8h4v3.5h-1V7.8h-2v2.5Z" fill="#fff"/>
+								</svg>
 						</a>
 					</li>
 					<li>
@@ -140,15 +142,21 @@
 						<option value="cheap"><span class="select-control-text">Сначала дешёвые</span></option>
 					</select>
 					<div class="three-button-catalog">
-					<a class="button-black" href="#">
-						<img class="button-black-option" alt="Показать карточки" src="images/icon-table.svg" width="16" height="14">
-					</a>
-					<a class="button-lightgray" href="#">
-						<img class="button-lightgray-option" alt="Изменить вид" src="images/icon-slideshow.svg" width="16" height="14">
-					</a>
-					<a class="button-lightgray" href="#">
-						<img class="button-lightgray-option" alt="Изменить вид по другому" src="images/icon-list.svg" width="16" height="14">
-					</a>
+					<button class=" button-black-option">
+						<svg  width="16" height="14" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
+							</svg>
+					</button>
+					<button class="button-lightgray-option">
+						<svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
+							</svg>
+					</button>
+					<button class="button-lightgray-option">
+						<svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/>
+							</svg>
+					</button>
 				</div>
 				</div>
 				<ul class="product-card">
@@ -170,7 +178,12 @@
 							</button>
 						</div>
 						<div class="start-and-rating-block">
-						  <span class="product-card-item-stars">Звезды</span>
+						  <ul class="product-card-item-stars">
+								<li class="stars"></li>
+								<li class="stars"></li>
+								<li class="stars"></li>
+								<li class="stars"></li>
+							</ul>
 							<p class="rating">РЕЙТИНГ:8,5</p>
             </div>
 					 </li>
@@ -192,7 +205,12 @@
 									</button>
 								</div>
 								<div class="start-and-rating-block">
-									<span class="product-card-item-stars">Звезды</span>
+									<ul class="product-card-item-stars">
+										<li class="stars"></li>
+										<li class="stars"></li>
+										<li class="stars"></li>
+										<li class="stars"></li>
+									</ul>
 									<p class="rating">РЕЙТИНГ:9,2</p>
 								</div>
 							
@@ -215,7 +233,11 @@
 									</button>
 								</div>
 								<div class="start-and-rating-block">
-									<span class="product-card-item-stars">Звезды</span>
+									<ul class="product-card-item-stars">
+										<li class="stars"></li>
+										<li class="stars"></li>
+										<li class="stars"></li>
+									</ul>
 									<p class="rating">РЕЙТИНГ:6,9</p>
 								</div>
 							 </li>
@@ -237,7 +259,10 @@
 										</button>
 									</div>
 									<div class="start-and-rating-block">
-										<span class="product-card-item-stars">Звезды</span>
+										<ul class="product-card-item-stars">
+											<li class="stars"></li>
+											<li class="stars"></li>
+										</ul>
 										<p class="rating">РЕЙТИНГ:5,0</p>
 									</div>
 								 </li>
@@ -281,8 +306,8 @@
 								</p>
 								<form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
 							<input class="form-text" type="email" placeholder="Ваш e-mail" name="appointment-email">
-									<button class="button" type="submit" >
-										ПОДПИСАТЬСЯ
+									<button class="button-for-subscribe" type="submit" >
+										<span class="button-text">ПОДПИСАТЬСЯ</span>
 									</button>
 									
 								</form>
