@@ -92,7 +92,7 @@ body{
 	width: 42px;
 }
 .main-greeting{
-	/* padding: 51px 371px 82px 371px; */
+	padding: 51px 371px 82px 371px; 
 	background-image:url("../images/index-background-welcom-sedona.jpg"),url("../images/divider-for-welcom-sedona.svg");
 	background-repeat: no-repeat, no-repeat ;
 	background-size: 1200px 485px,1200px 57px;
