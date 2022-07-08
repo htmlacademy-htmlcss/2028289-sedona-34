@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+		<link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+<header class="header-page">
+<nav class="navigation">
+ <div class="navigation-logo-header">
+	<a class="link-index-page-now" href="index.html">
+	 <img class="header-logo" src="images/logo-sedona.svg" width="139" height="70" alt="Логотип сайта города Седона">
+  </a>
+ </div>
+	<ul class="navigation-list navigation-list-left">
+		 <li class="navigation-item">
+     <a class="navigation-link" href="#glav">
+     Главная
+     </a>
+	  </li>
+		<li class="navigation-item">
+			<a class="navigation-link" href="#description">
+			О Седоне
+			</a>
+		</li>
+		<li class="navigation-item">
+			<a class="navigation-link" href="#hotel">
+			Гостиницы
+			</a>
+		</li>
+	</ul>
+	  
+	  <ul class="navigation-list navigation-user navigation-list-right">
+			<li class="navigation-item">
+				<a class="navigation-link" href="#">
+				<img src="images/search.svg" width="18" height="18" alt="Поиск">
+				<span class="visually-hidden">Поиск</span>
+			</a>
+		 </li>
+			
+			<li class="navigation-item">
+			 <a class="navigation-link" href="#">
+				<img src="images/hearts.svg" width="18" height="17" alt="Избранное">
+				<span class="visually-hidden">Избранное</span>
+			 </a>
+			</li>
+			 
+			<li class="navigation-item">
+			 <a class="navigation-link-alternative" href="#">
+				<button class="button-header ">хочу сюда</button>
+			 </a>
+		</li>
+	 </ul>
+	</nav>
+</header>
