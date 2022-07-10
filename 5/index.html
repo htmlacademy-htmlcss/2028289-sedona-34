@@ -16,7 +16,7 @@
  </div>
 	<section class="navigation-list navigation-list-left">
 		 <div class="navigation-item-glav-nav ">
-     <a class="navigation-link " href="#glav">
+     <a class="navigation-link " href="index.html">
      Главная
      </a>
 			<a class="navigation-link" href="#description">
@@ -29,7 +29,7 @@
 	</section>
 	  
 	  <section class="navigation-list navigation-list-right">
-			<div class="navigation-item-search-images">
+			<div class="navigation-item-search-images ">
 				<a class="navigation-link-ss" href="#">
 					<svg class="navigation-icon" aria-hidden="true" focusable="false"  width="18" height="18" fill="none" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
 						<path d="m18.2 17-3.8-3.7a8 8 0 0 0 1.8-4.9 8 8 0 0 0-8-8 8 8 0 1 0 5 14.4l3.6 3.8 1.4-1.6Zm-10-2.4a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" fill="#000"/>
@@ -38,9 +38,9 @@
 			</a>
 		</div>
 			
-			<div class="navigation-item-hearts-images">
+			<div class="navigation-item-hearts-images icon-o ">
 			 <a class="navigation-link-ss" href="#">
-				<svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" fill="none" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
+				<svg class="navigation-icon " aria-hidden="true" focusable="false" width="19" height="17" fill="none" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
 					<path d="M9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.6 0C7 0 8.1.5 9.1 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3ZM3 7.5l6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c0 .9.3 1.6.7 2.1Z" fill="#000"/>
 				</svg>
 				<span class="visually-hidden">Избранное</span>
@@ -193,7 +193,7 @@
 	<form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
  <input class="form-text" type="email" placeholder="Ваш e-mail" name="appointment-email">
 		<button class="button-for-subscribe" type="submit" >
-			<span class="button-text">ПОДПИСАТЬСЯ</span>
+			ПОДПИСАТЬСЯ
 		</button>
 		
 	 </form>
@@ -235,6 +235,91 @@
 			</a>
 	</div>
 		
-	</footer>  
+	</footer>
+	  <div class="modal-container  visually-hidden">  
+		<div class="modal modal-auth">
+			<button class="modal-close-button">
+				<span class="visually-hidden">Закрыть</span>
+			</button>
+			<section class="modal-content">
+				<h2 class="modal-title">поиск гостиницы в Седоне</h2>
+			</section>
+			<form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+			 <div class="first-modal-form">
+				<span class="text-date">
+				<label class="label-for-text-date first-date" for="first-date">
+				Дата Заезда: 
+			</label>
+		</span>
+		<input class="auth-form-field field-first" type="text" id="first-date" name="first-date" placeholder="27 апреля 2020">
+		<svg class="svg-calendar" width="15" height="15" aria-hidden="true" focusable="false" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.3">
+			<path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z" fill="black"/>
+			<path d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z" fill="black"/>
+			<path d="M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z" fill="black"/>
+			<path d="M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z" fill="black"/>
+			<path d="M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z" fill="black"/>
+			<path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z" fill="black"/>
+			<path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z" fill="black"/>
+			<path d="M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z" fill="black"/>
+			<path d="M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z" fill="black"/>
+			<path d="M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z" fill="black"/>
+			<path d="M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z" fill="black"/>
+			</g>
+			</svg>
+	 </div>
+  	<div class="first-modal-form">
+		 <span class="text-date">
+		  <label class="label-for-text-date next-date" for="next-date">
+		   Дата Выезда: 
+	    </label>
+     </span>
+    <input class="auth-form-field field-next" type="text" id="next-date" name="next-date" placeholder="1 сентября 2021">
+		<svg class="svg-calendar-bottom" width="15" height="15" aria-hidden="true" focusable="false" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.3">
+			<path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z" fill="black"/>
+			<path d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z" fill="black"/>
+			<path d="M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z" fill="black"/>
+			<path d="M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z" fill="black"/>
+			<path d="M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z" fill="black"/>
+			<path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z" fill="black"/>
+			<path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z" fill="black"/>
+			<path d="M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z" fill="black"/>
+			<path d="M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z" fill="black"/>
+			<path d="M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z" fill="black"/>
+			<path d="M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z" fill="black"/>
+			</g>
+			</svg>
+	</div>
+		<div class="change-people">
+			<span class="text-date">
+				<label class="label-for-text-date adult" for="adults">
+				 Взрослые: 
+				</label>
+			 </span>
+			<input class="auth-form-field field-adult" type="text" id="adults" name="adults" placeholder="2">
+			<svg class="minus-modal efect" width="13" height="1" aria-hidden="true" focusable="false" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				 <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" /> 
+				</svg>
+				<svg class="plus-modal efect" width="13" height="13" aria-hidden="true" focusable="false" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path opacity="0.3" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+					</svg>
+			<span class="text-date">
+				<label class="label-for-text-date childd" for="children">
+				 Дети: 
+				</label>
+			 </span>
+			<input class="auth-form-field field-childd" type="text" id="children" name="children" placeholder="1">
+			<svg class="minus-modal-right efect" width="13" height="1" aria-hidden="true" focusable="false" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+				</svg>
+				<svg class="plus-modal-right efect" width="13" height="13" aria-hidden="true" focusable="false" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path opacity="0.3" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+					</svg>
+		</div>
+     <button class="button-for-form-field" type="submit">Найти</button>
+			</form>
+		</div>
+	</div>  
 </body>
 </html>
