@@ -15,7 +15,7 @@
 			 </div>
 		  <section class="navigation-list navigation-list-left">
 			<div class="navigation-item-glav-nav navigation-item-glav-nav-current-catalog">
-			 <a class="navigation-link" href="#glav">
+			 <a class="navigation-link" href="index.html">
 			 Главная
 			 </a>
 			 <a class="navigation-link" href="#description">
@@ -58,7 +58,7 @@
 				<ul class="breadcrubs">
 					<li class="link-hone-for-filtre">
 						<a class="link-home" href="index.html">
-							<svg width="12" height="12" aria-hidden="true" focusable="false" fill="currentColor" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+							<svg class="svg-home-for-filtr" width="12" height="12" aria-hidden="true" focusable="false" fill="currentColor" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="m.2 6.1 6-5.5 6 5.5v6.2H.2V6.1Zm1 .4v4.8h10V6.5L6.2 2l-5 4.5Zm4 3.8h-1V6.8h4v3.5h-1V7.8h-2v2.5Z"/>
 								</svg>
 						</a>
@@ -72,26 +72,29 @@
 						<legend class="catalog-filter-title">Инфраструктура:</legend>
 						<ul class="catalog-filter-list">
 							<li class="catalog-filter-item">
-								<label class="control">
-									<input class="control-input" type="checkbox" checked name="pool">
-									Бассейн
+								<label class="control-margin-bottom">
+									<input class="control-input visually-hidden" type="checkbox" checked name="pool">
+									<span class="control-mark"></span>
+									<span class="control-label">Бассейн</span>
 								</label>
 
 							</li>
 						</ul>
 						<ul class="catalog-filter-list">
 							<li class="catalog-filter-item">
-								<label class="control">
-									<input class="control-input" type="checkbox" checked name="parking">
-									Парковка
+								<label class="control-margin-bottom">
+									<input class="control-input visually-hidden" type="checkbox" checked name="parking">
+									<span class="control-mark"></span>
+									<span class="control-label">Парковка</span>
 								</label>
 							</li>
 						</ul>
 						<ul class="catalog-filter-list">
 							<li class="catalog-filter-item">
-								<label class="control">
-									<input class="control-input" type="checkbox" name="Wi-Fi">
-									Wi-Fi
+								<label class="control ">
+									<input class="control-input visually-hidden" type="checkbox" name="Wi-Fi">
+									<span class="control-mark"></span>
+									<span class="control-label">Wi-Fi</span> 
 								</label>
 
 							</li>
@@ -103,26 +106,29 @@
 						<legend class="catalog-filter-title">Тип жилья:</legend>
 						<ul class="catalog-filter-list">
 							<li class="catalog-filter-item">
-								<label class="control">
-									<input class="control-input" type="radio" checked name="radio-control">
-									Гостиница
+								<label class="control-margin-bottom">
+									<input class="control-input visually-hidden" type="radio" checked name="radio-control">
+									<span class="control-mark-radio"></span>
+									<span class="control-label">Гостиница</span>
 								</label>
 
 							</li>
 						</ul>
 						<ul class="catalog-filter-list">
 							<li class="catalog-filter-item">
-								<label class="control">
-									<input class="control-input" type="radio" name="radio-control">
-									Мотель
+								<label class="control-margin-bottom">
+									<input class="control-input visually-hidden" type="radio" name="radio-control">
+									<span class="control-mark-radio"></span>
+									<span class="control-label">Мотель</span>
 								</label>
 							</li>
 						</ul>
 						<ul class="catalog-filter-list">
 							<li class="catalog-filter-item">
 								<label class="control">
-									<input class="control-input" type="radio" name="radio-control">
-									Апартаменты
+									<input class="control-input visually-hidden" type="radio" name="radio-control">
+									<span class="control-mark-radio"></span>
+									<span class="control-label">Апартаменты</span>
 								</label>
 
 							</li>
@@ -152,7 +158,10 @@
 								
 							</div>
 						</fieldset>
+						<div class="button-conttainer">
 						<button class="button" type="submit">ПРИМЕНИТЬ</button>
+						<button class="button-for-bottom" type="button">Сбросить</button>
+					</div>
 					</form>
 				</div>
 			</section>
