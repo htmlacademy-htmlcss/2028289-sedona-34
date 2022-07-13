@@ -274,7 +274,28 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 	 display: flex;
 }	
 .catalog-filter-label{
+	position: relative;
 	display: flex;
+}
+.catalog-filter-label-before{
+	position: absolute;
+	top: 12px;
+	right: 14px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;
+	color: #ffffff;
+	opacity: 0.3;
+}
+.catalog-filter-label-after{
+	position: absolute;
+	top: 12px;
+	right: 17px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;
+	color: #ffffff;
+	opacity: 0.3;
 }
 .range-input{
 	background-color: transparent;
@@ -1547,6 +1568,7 @@ margin: auto;
 	display: flex;
 }
 .modal{
+	position: relative;
 	margin: auto;
 	padding: 62px 70px 70px 70px;
 	background-color: #ffffff;
@@ -1655,12 +1677,34 @@ margin: auto;
 	cursor: pointer;
 }
 .field-first{
+	position: relative;
 	width: 420px;
 	padding: 0;
 	box-sizing: border-box;
 	padding: 15px 278px 14px 19px;
 }
+.warning{
+	position: absolute;
+	margin: 0;
+	left: 155px;
+	top:58px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	color: #FF5757;
+}
+.warning-next{
+	position: absolute;
+	margin: 0;
+	left: 155px;
+	top:59px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	color: #333333;
+}
 .field-next{
+	position: relative;
 	width: 420px;
 	padding: 0;
 	box-sizing: border-box;
@@ -1706,6 +1750,36 @@ margin: auto;
 	line-height: 36px;
 	text-transform: uppercase;
 	cursor: pointer;
+	position: relative;
+}
+.molal-for-circle-for-info{
+	position: absolute;
+	padding: 15px 18px 18px 22px;
+	background-color: #333333;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: left;
+	z-index: 6;
+	margin: 0;
+	top:55px;
+	right: 36px;
+	left: 283px;
+	bottom: -148px;
+}
+.molal-for-circle-for-info::before{
+	content: "";
+	position: absolute;
+	background-image: url("../images/for-modal-window-info.svg");
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 9px;
+	top:-9px;
+	left:118px;
 }
 .button-for-form-field:hover{
 	background-color: #68A2CA;
@@ -1721,19 +1795,6 @@ margin: auto;
 .text-date{
 	align-self: center;
 }
-/* .change-people::before{
-	content: "i";
-	padding:2px 10px 5px 10px;
-	box-sizing: border-box;
-	color: #ffffff;
-	width: 25px;
-	height: 25px;
-	position: absolute;
-	background-color: #83B3D3;;
-	border-radius: 50%;
-  right:151px;
-	top:14px;
-} */
 .circle-for-info{
 	width: 25px;
 	height: 25px;
@@ -1776,7 +1837,7 @@ margin: auto;
 	background-position: center;
 	background-color: #F2F2F2;
 	top: 54px;
-	right: 70px;
+	right: 69px;
 	width: 53px ;
 	min-height: 53px;
 	border-radius: 50%;
